@@ -20,10 +20,10 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '7=49emm-8rz&y9+-ajikn^*nl%x#^r^!yuz9#0hnxi1n7nhu2j'
+SECRET_KEY = config('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = config('DEBUG', cast=bool)
 
 # Application definition
 
@@ -50,7 +50,7 @@ MIDDLEWARE = [
 
 DEFAULT_AUTO_FIELD='django.db.models.AutoField'
 
-ROOT_URLCONF = 'medstore.urls'
+ROOT_URLCONF = config('URLCONF')
 
 TEMPLATES = [
     {
@@ -69,14 +69,14 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'medstore.wsgi.application'
+WSGI_APPLICATION = config('WSGI')
 
 # Database
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
+        'ENGINE': config('DB_ENGINE'),
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }

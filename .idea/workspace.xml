@@ -9,8 +9,8 @@
       <change beforePath="$PROJECT_DIR$/pharma/static/pharma/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/pharma/static/pharma/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pharma/templates/pharma/cust.html" beforeDir="false" afterPath="$PROJECT_DIR$/pharma/templates/pharma/cust.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pharma/templates/pharma/custtable.html" beforeDir="false" afterPath="$PROJECT_DIR$/pharma/templates/pharma/custtable.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pharma/templates/pharma/dealer.html" beforeDir="false" afterPath="$PROJECT_DIR$/pharma/templates/pharma/dealer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pharma/templates/pharma/dealertable.html" beforeDir="false" afterPath="$PROJECT_DIR$/pharma/templates/pharma/dealertable.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pharma/templates/pharma/supplier.html" beforeDir="false" afterPath="$PROJECT_DIR$/pharma/templates/pharma/supplier.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pharma/templates/pharma/suppliertable.html" beforeDir="false" afterPath="$PROJECT_DIR$/pharma/templates/pharma/suppliertable.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pharma/templates/pharma/emp.html" beforeDir="false" afterPath="$PROJECT_DIR$/pharma/templates/pharma/emp.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pharma/templates/pharma/emptable.html" beforeDir="false" afterPath="$PROJECT_DIR$/pharma/templates/pharma/emptable.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pharma/templates/pharma/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/pharma/templates/pharma/index.html" afterDir="false" />
@@ -75,7 +75,7 @@
       <find>data-tog</find>
       <find>data-target</find>
       <find>emp</find>
-      <find>dealer</find>
+      <find>supplier</find>
       <find>cust</find>
       <find>med</find>
       <find>ALLOWED</find>
@@ -87,7 +87,7 @@
       <find>conta</find>
     </findStrings>
     <replaceStrings>
-      <replace>dealer</replace>
+      <replace>supplier</replace>
       <replace>Employee</replace>
       <replace>Customer</replace>
       <replace>Medicine</replace>
@@ -125,7 +125,7 @@
         <option value="$PROJECT_DIR$/pharma/static/pharma/js/bootstrap.js" />
         <option value="$PROJECT_DIR$/pharma/admin.py" />
         <option value="$PROJECT_DIR$/pharma/templates/pharma/custupdate.html" />
-        <option value="$PROJECT_DIR$/pharma/templates/pharma/dealerupdate.html" />
+        <option value="$PROJECT_DIR$/pharma/templates/pharma/supplierupdate.html" />
         <option value="$PROJECT_DIR$/pharma/templates/pharma/empupdate.html" />
         <option value="$PROJECT_DIR$/pharma/templates/pharma/medupdate.html" />
         <option value="$PROJECT_DIR$/pharma/templates/pharma/purchaseupdate.html" />
@@ -138,8 +138,8 @@
         <option value="$PROJECT_DIR$/pharma/templates/pharma/new.html" />
         <option value="$PROJECT_DIR$/pharma/templates/pharma/cust.html" />
         <option value="$PROJECT_DIR$/pharma/templates/pharma/custtable.html" />
-        <option value="$PROJECT_DIR$/pharma/templates/pharma/dealertable.html" />
-        <option value="$PROJECT_DIR$/pharma/templates/pharma/dealer.html" />
+        <option value="$PROJECT_DIR$/pharma/templates/pharma/suppliertable.html" />
+        <option value="$PROJECT_DIR$/pharma/templates/pharma/supplier.html" />
         <option value="$PROJECT_DIR$/pharma/templates/pharma/emp.html" />
         <option value="$PROJECT_DIR$/pharma/templates/pharma/emptable.html" />
         <option value="$PROJECT_DIR$/pharma/templates/pharma/med.html" />
@@ -686,7 +686,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pharma/templates/pharma/orderform.html" />
     <entry file="file://$PROJECT_DIR$/pharma/templates/pharma/custupdate.html" />
-    <entry file="file://$PROJECT_DIR$/pharma/templates/pharma/dealerupdate.html" />
+    <entry file="file://$PROJECT_DIR$/pharma/templates/pharma/supplierupdate.html" />
     <entry file="file://$PROJECT_DIR$/pharma/templates/pharma/empupdate.html" />
     <entry file="file://$PROJECT_DIR$/pharma/templates/pharma/medupdate.html" />
     <entry file="file://$PROJECT_DIR$/pharma/templates/pharma/purchaseupdate.html" />
@@ -764,7 +764,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pharma/templates/pharma/dealertable.html">
+    <entry file="file://$PROJECT_DIR$/pharma/templates/pharma/suppliertable.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="332">
           <caret line="109" column="11" selection-start-line="109" selection-start-column="11" selection-end-line="109" selection-end-column="11" />
@@ -786,7 +786,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pharma/templates/pharma/dealer.html">
+    <entry file="file://$PROJECT_DIR$/pharma/templates/pharma/supplier.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="332">
           <caret line="107" column="11" selection-start-line="107" selection-start-column="11" selection-end-line="107" selection-end-column="11" />

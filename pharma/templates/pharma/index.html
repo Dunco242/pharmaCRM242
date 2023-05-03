@@ -1,5 +1,7 @@
 {% load static %}
 
+
+{% if user.is_authenticated %}
 <!doctype html>
 <html>
 <head>
@@ -132,6 +134,30 @@
                     class="fa fa-envelope prefix mr-1"></i> Contact Us</span>
         </div>
     </div>
+
+    {% else %}
+
+    <h1> Login</h1>
+    <br/>
+    <form method="POST" action="{% url 'login' %}">
+        
+        <form>
+            {% csrf_token %}
+  <div class="mb-3">    
+    <input type="text" class="form-control" name="username", placeholder="Username" required>
+    
+  </div>
+  <div class="mb-3">
+    
+    <input type="password" class="form-control" name="password", placeholder="Password" requireds>
+  </div>
+  {% endif %}
+  <br/>
+  <button type="submit" class="btn btn-secondary">Login</button>
+</form>
+    </form>
+
+
 </footer>
 </body>
 </html>

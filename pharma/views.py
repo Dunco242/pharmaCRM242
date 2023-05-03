@@ -1,3 +1,6 @@
+from django.shortcuts import render,  redirect
+from django.contrib.auth import authenticate, login, logout
+from django.contrib import messages
 from .models import Supplier
 from .models import Employee
 from .models import Customer
@@ -5,6 +8,27 @@ from .models import Medicine
 from .models import Purchase
 from django.shortcuts import render
 from django.db import IntegrityError
+
+
+
+
+def user_login(request):
+    if request.method =='POST':
+            username = request.POST['username']
+            password = request.POST['password']
+        # Authenticate
+            user = authenticate(request,username=username, password=password)
+            if user is not None:
+                login(request, user)
+                messages.success(request, "You have been logged in successfully")
+                return redirect ('index')
+            else:
+            
+                messages.success(request, "There was an error logging in. Please try again.")
+                return redirect('index')
+    else:
+        return render(request, 'index')
+
 
 
 def home(request):
